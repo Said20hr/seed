@@ -5,7 +5,14 @@
 
 body
 {
-  background: #0e0e0e;
+  @apply bg-gray-100 dark:bg-[#0B192C];
+}
+.inputs{
+
+    transition: width 0.3s ease; /* Smooth transition for width change */
+
+
+  @apply w-auto text-gray-800 dark:text-white text-center h-20 p-4 border  border-gray-400 dark:border-[#333] bg-gray-200 dark:bg-slate-900 ;
 }
 @layer base {
   input[type="number"]::-webkit-inner-spin-button,
